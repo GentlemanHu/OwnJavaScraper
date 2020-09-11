@@ -23,7 +23,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -A
-        git commit -am "update from github action bot at $(date)"
+        git commit -am "↑by github_action_bot@$(date)"
     - name: Push changes
       uses: We2one/github-push-action@master
       with:
