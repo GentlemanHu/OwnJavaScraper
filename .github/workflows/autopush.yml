@@ -19,7 +19,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git remote add nowcoder https://work%40crushing.xyz:bishengHYL,.@git.nowcoder.com/366714942/OwnJavaScraper.git
-        git pull nowcoder
+        git config pull.rebase false
+        git pull nowcoder master
         echo "bot auto push at::: $(date)" >> .action.log
         git add -A
         git commit -am "↑by github_action_bot@$(date)"
