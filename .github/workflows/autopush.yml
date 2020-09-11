@@ -25,7 +25,7 @@ jobs:
         git add -A
         git commit -am "update from github action bot at $(date)"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: We2one/github-push-action@master
       with:
         github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
         repository: ${{ secrets.NOWCODER_REPO }}
