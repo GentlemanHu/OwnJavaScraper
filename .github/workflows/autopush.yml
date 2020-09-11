@@ -17,7 +17,7 @@ jobs:
     - name: Create local changes
       run: |
         echo "bot auto push at::: $(date)" >> .action.log
-
+        git add -A
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
