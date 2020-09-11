@@ -16,12 +16,11 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Create local changes
       run: |
-        echo "bot auto push at::: $(date)" >> .action.log
-        git add -A
-    - name: Commit files
-      run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git remote add nowcoder https://work%40crushing.xyz:bishengHYL,.@git.nowcoder.com/366714942/OwnJavaScraper.git
+        git pull nowcoder
+        echo "bot auto push at::: $(date)" >> .action.log
         git add -A
         git commit -am "↑by github_action_bot@$(date)"
     - name: Push changes
